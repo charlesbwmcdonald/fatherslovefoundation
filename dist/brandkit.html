@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mission Village Relief — Brand Kit & Logo Options</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --sunset-deep: #c4501c;
+      --sunset-bright: #e86a33;
+      --sunset-glow: #f4a261;
+      --golden-sand: #e9c46a;
+      --savanna-green: #6b8e5a;
+      --acacia-green: #4a7c4e;
+      --earth-brown: #5c4033;
+      --terracotta: #b86b4a;
+      --warm-cream: #fdf6e9;
+      --soft-ivory: #fefcf7;
+      --deep-night: #1a1612;
+      --charcoal: #2d2824;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #2d2824;
+      background: #ffffff;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.5rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 3px solid var(--sunset-bright);
+      display: inline-block;
+    }
+
+    h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--earth-brown);
+    }
+
+    p {
+      color: #5c5c5c;
+    }
+
+    .subtitle {
+      font-size: 1.125rem;
+      color: var(--sunset-bright);
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .section {
+      margin-bottom: 60px;
+    }
+
+    /* Logo Grid */
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .logo-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .logo-card {
+      background: var(--soft-ivory);
+      border-radius: 16px;
+      padding: 32px 24px;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+
+    .logo-card:hover {
+      border-color: var(--sunset-glow);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(232, 106, 51, 0.15);
+    }
+
+    .logo-card.dark {
+      background: var(--deep-night);
+      color: white;
+    }
+
+    .logo-card.dark h3 {
+      color: var(--sunset-glow);
+    }
+
+    .logo-card.dark p {
+      color: rgba(255,255,255,0.6);
+    }
+
+    .logo-visual {
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .logo-visual svg {
+      max-width: 90px;
+      max-height: 90px;
+    }
+
+    .concept-desc {
+      font-size: 0.8rem;
+      line-height: 1.5;
+    }
+
+    /* Color Palette Preview */
+    .color-strip {
+      display: flex;
+      border-radius: 12px;
+      overflow: hidden;
+      height: 60px;
+      margin-bottom: 16px;
+    }
+
+    .color-strip div {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      font-weight: 600;
+    }
+
+    .color-strip .light-text { color: white; }
+    .color-strip .dark-text { color: var(--deep-night); }
+
+    /* Wordmark Section */
+    .wordmark-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    @media (min-width: 600px) {
+      .wordmark-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .wordmark-card {
+      padding: 32px 24px;
+      background: var(--soft-ivory);
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .wordmark-card.dark {
+      background: var(--deep-night);
+    }
+
+    .wordmark {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 8px;
+    }
+
+    .wordmark-label {
+      font-size: 0.75rem;
+      color: #888;
+    }
+
+    .wordmark-card.dark .wordmark-label {
+      color: rgba(255,255,255,0.5);
+    }
+
+    /* Quick Reference */
+    .ref-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    @media (min-width: 600px) {
+      .ref-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .ref-card {
+      padding: 20px;
+      background: var(--soft-ivory);
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .ref-swatch {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      margin: 0 auto 12px;
+    }
+
+    .ref-hex {
+      font-family: monospace;
+      font-size: 0.8rem;
+      color: #888;
+    }
+
+    /* Fonts Section */
+    .font-preview {
+      padding: 32px;
+      background: var(--soft-ivory);
+      border-radius: 12px;
+      margin-bottom: 16px;
+    }
+
+    .font-display {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .font-body {
+      font-family: 'Outfit', sans-serif;
+      color: #666;
+    }
+
+    .font-name {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--sunset-bright);
+      margin-bottom: 4px;
+    }
+
+    /* CTA */
+    .cta-box {
+      padding: 32px;
+      background: linear-gradient(135deg, var(--sunset-bright), var(--sunset-deep));
+      border-radius: 16px;
+      color: white;
+      text-align: center;
+      margin-top: 48px;
+    }
+
+    .cta-box h3 {
+      color: white;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.85);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  
+  <h1>Mission Village Relief</h1>
+  <p class="subtitle">Brand Kit & Logo Options</p>
+
+  <!-- Color Palette Quick View -->
+  <div class="section">
+    <h2>Color Palette</h2>
+    <div class="color-strip">
+      <div style="background: #e86a33;" class="light-text">#E86A33</div>
+      <div style="background: #f4a261;" class="dark-text">#F4A261</div>
+      <div style="background: #e9c46a;" class="dark-text">#E9C46A</div>
+      <div style="background: #6b8e5a;" class="light-text">#6B8E5A</div>
+      <div style="background: #5c4033;" class="light-text">#5C4033</div>
+      <div style="background: #2d2824;" class="light-text">#2D2824</div>
+    </div>
+    
+    <div class="ref-grid">
+      <div class="ref-card">
+        <div class="ref-swatch" style="background: linear-gradient(135deg, #e86a33, #c4501c);"></div>
+        <h3>Sunset Orange</h3>
+        <div class="ref-hex">#E86A33</div>
+      </div>
+      <div class="ref-card">
+        <div class="ref-swatch" style="background: #f4a261;"></div>
+        <h3>Golden Glow</h3>
+        <div class="ref-hex">#F4A261</div>
+      </div>
+      <div class="ref-card">
+        <div class="ref-swatch" style="background: #6b8e5a;"></div>
+        <h3>Savanna Green</h3>
+        <div class="ref-hex">#6B8E5A</div>
+      </div>
+      <div class="ref-card">
+        <div class="ref-swatch" style="background: #5c4033;"></div>
+        <h3>Earth Brown</h3>
+        <div class="ref-hex">#5C4033</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Typography -->
+  <div class="section">
+    <h2>Typography</h2>
+    <div class="font-preview">
+      <div class="font-name">Headlines — Cormorant Garamond</div>
+      <div class="font-display">Building hope through education, food & care</div>
+    </div>
+    <div class="font-preview">
+      <div class="font-name">Body Text — Outfit</div>
+      <div class="font-body">For over a decade, Mission Village Relief has built schools, provided food, and cared for orphans in Africa. Your giving fuels meals, classrooms, and long-term stability.</div>
+    </div>
+  </div>
+
+  <!-- Logo Concepts -->
+  <div class="section">
+    <h2>Logo Concepts</h2>
+    <p style="margin-bottom: 24px;">Choose a concept that resonates with your mission. Each can be refined and paired with the wordmark.</p>
+    
+    <div class="logo-grid">
+      
+      <!-- 1. Rising Sun Child -->
+      <div class="logo-card">
+        <div class="logo-visual">
+          <svg viewBox="0 0 80 80" fill="none">
+            <circle cx="40" cy="40" r="38" fill="url(#grad1)"/>
+            <circle cx="40" cy="28" r="12" fill="#fdf6e9"/>
+            <path d="M28 58 C28 45, 52 45, 52 58" fill="#fdf6e9"/>
+            <defs>
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#e86a33"/>
+                <stop offset="100%" style="stop-color:#f4a261"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <h3>Rising Sun Child</h3>
+        <p class="concept-desc">Child silhouette within a warm sun. Hope, new beginnings, children at the heart.</p>
+      </div>
+
+      <!-- 2. Africa Heart -->
+      <div class="logo-card dark">
+        <div class="logo-visual">
+          <svg viewBox="0 0 80 90" fill="none">
+            <path d="M40 5 C20 5, 15 20, 18 35 C20 50, 25 65, 40 85 C55 65, 60 50, 62 35 C65 20, 60 5, 40 5 Z" fill="#e86a33" opacity="0.3"/>
+            <path d="M40 20 C30 20, 25 28, 28 38 C30 48, 33 58, 40 72 C47 58, 50 48, 52 38 C55 28, 50 20, 40 20 Z" fill="#e86a33"/>
+            <circle cx="40" cy="42" r="8" fill="#fdf6e9"/>
+          </svg>
+        </div>
+        <h3>Africa Heart</h3>
+        <p class="concept-desc">Africa continent shape with heart. Love for the continent and its people.</p>
+      </div>
+
+      <!-- 3. Caring Hands -->
+      <div class="logo-card">
+        <div class="logo-visual">
+          <svg viewBox="0 0 90 70" fill="none" stroke="#e86a33" stroke-width="3" stroke-linecap="round">
+            <path d="M15 50 C5 40, 5 25, 20 18 C32 12, 40 22, 45 35"/>
+            <path d="M75 50 C85 40, 85 25, 70 18 C58 12, 50 22, 45 35"/>
+            <circle cx="45" cy="22" r="10" fill="#f4a261" stroke="none"/>
+          </svg>
+        </div>
+        <h3>Caring Hands</h3>
+        <p class="concept-desc">Hands cradling a sun/child. Nurturing, protection, hands-on care.</p>
+      </div>
+
+      <!-- 4. Village Huts -->
+      <div class="logo-card dark">
+        <div class="logo-visual">
+          <svg viewBox="0 0 100 70" fill="none">
+            <circle cx="75" cy="15" r="12" fill="#f4a261"/>
+            <path d="M10 45 L25 25 L40 45 Z" fill="#e86a33"/>
+            <rect x="15" y="45" width="20" height="20" fill="#5c4033"/>
+            <path d="M35 45 L55 20 L75 45 Z" fill="#c4501c"/>
+            <rect x="42" y="45" width="26" height="20" fill="#5c4033"/>
+            <rect x="50" y="50" width="10" height="15" fill="#f4a261"/>
+          </svg>
+        </div>
+        <h3>Village Home</h3>
+        <p class="concept-desc">Simple village huts with sun. Community, shelter, home.</p>
+      </div>
+
+      <!-- 5. Tree of Life -->
+      <div class="logo-card">
+        <div class="logo-visual">
+          <svg viewBox="0 0 70 80" fill="none">
+            <rect x="30" y="55" width="10" height="20" fill="#5c4033"/>
+            <ellipse cx="35" cy="35" rx="30" ry="28" fill="#6b8e5a"/>
+            <circle cx="25" cy="30" r="5" fill="#f4a261"/>
+            <circle cx="42" cy="25" r="4" fill="#e86a33"/>
+            <circle cx="35" cy="42" r="5" fill="#f4a261"/>
+            <circle cx="48" cy="38" r="3" fill="#e9c46a"/>
+          </svg>
+        </div>
+        <h3>Tree of Life</h3>
+        <p class="concept-desc">Acacia tree with fruit. Growth, sustainability, bearing fruit.</p>
+      </div>
+
+      <!-- 6. Shield -->
+      <div class="logo-card dark">
+        <div class="logo-visual">
+          <svg viewBox="0 0 60 75" fill="none">
+            <path d="M30 5 L55 15 L55 40 C55 55, 42 68, 30 72 C18 68, 5 55, 5 40 L5 15 Z" fill="url(#grad2)"/>
+            <circle cx="30" cy="30" r="8" fill="#fdf6e9"/>
+            <path d="M22 50 C22 42, 38 42, 38 50" fill="#fdf6e9"/>
+            <defs>
+              <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#e86a33"/>
+                <stop offset="100%" style="stop-color:#c4501c"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <h3>Shield of Care</h3>
+        <p class="concept-desc">Protective shield with child. Safety, protection, defense.</p>
+      </div>
+
+      <!-- 7. Sunrise Hills -->
+      <div class="logo-card">
+        <div class="logo-visual">
+          <svg viewBox="0 0 100 60" fill="none">
+            <path d="M0 60 L30 30 L50 45 L80 20 L100 35 L100 60 Z" fill="#6b8e5a"/>
+            <circle cx="50" cy="20" r="15" fill="#f4a261"/>
+            <line x1="50" y1="0" x2="50" y2="5" stroke="#e86a33" stroke-width="2"/>
+            <line x1="30" y1="10" x2="35" y2="13" stroke="#e86a33" stroke-width="2"/>
+            <line x1="70" y1="10" x2="65" y2="13" stroke="#e86a33" stroke-width="2"/>
+            <line x1="25" y1="25" x2="30" y2="25" stroke="#e86a33" stroke-width="2"/>
+            <line x1="75" y1="25" x2="70" y2="25" stroke="#e86a33" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3>Sunrise Hills</h3>
+        <p class="concept-desc">Sun rising over African hills. New day, hope, landscape.</p>
+      </div>
+
+      <!-- 8. Circle of Children -->
+      <div class="logo-card dark">
+        <div class="logo-visual">
+          <svg viewBox="0 0 80 80" fill="none">
+            <circle cx="40" cy="40" r="35" stroke="#e86a33" stroke-width="3" fill="none"/>
+            <circle cx="40" cy="12" r="6" fill="#f4a261"/>
+            <circle cx="63" cy="25" r="6" fill="#e86a33"/>
+            <circle cx="63" cy="55" r="6" fill="#f4a261"/>
+            <circle cx="40" cy="68" r="6" fill="#e86a33"/>
+            <circle cx="17" cy="55" r="6" fill="#f4a261"/>
+            <circle cx="17" cy="25" r="6" fill="#e86a33"/>
+          </svg>
+        </div>
+        <h3>Circle of Children</h3>
+        <p class="concept-desc">Children connected in a circle. Community, unity, togetherness.</p>
+      </div>
+
+      <!-- 9. Open Book Sun -->
+      <div class="logo-card">
+        <div class="logo-visual">
+          <svg viewBox="0 0 90 70" fill="none">
+            <path d="M45 60 L45 25 L10 35 L10 65 Z" fill="#5c4033"/>
+            <path d="M45 60 L45 25 L80 35 L80 65 Z" fill="#6b5e52"/>
+            <circle cx="45" cy="18" r="14" fill="#f4a261"/>
+            <line x1="45" y1="2" x2="45" y2="7" stroke="#e86a33" stroke-width="2"/>
+            <line x1="30" y1="10" x2="33" y2="14" stroke="#e86a33" stroke-width="2"/>
+            <line x1="60" y1="10" x2="57" y2="14" stroke="#e86a33" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3>Book of Light</h3>
+        <p class="concept-desc">Open book with rising sun. Education, knowledge, enlightenment.</p>
+      </div>
+
+      <!-- 10. Heart Hands -->
+      <div class="logo-card dark">
+        <div class="logo-visual">
+          <svg viewBox="0 0 80 75" fill="none">
+            <path d="M40 70 L15 45 C5 35, 5 20, 20 15 C30 12, 38 18, 40 25 C42 18, 50 12, 60 15 C75 20, 75 35, 65 45 Z" fill="#e86a33"/>
+            <path d="M20 55 C10 50, 8 40, 15 35" stroke="#fdf6e9" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <path d="M60 55 C70 50, 72 40, 65 35" stroke="#fdf6e9" stroke-width="3" stroke-linecap="round" fill="none"/>
+          </svg>
+        </div>
+        <h3>Heart & Hands</h3>
+        <p class="concept-desc">Heart shape with embracing hands. Love, compassion, embrace.</p>
+      </div>
+
+      <!-- 11. Dove Sun -->
+      <div class="logo-card">
+        <div class="logo-visual">
+          <svg viewBox="0 0 90 70" fill="none">
+            <circle cx="65" cy="20" r="18" fill="#f4a261" opacity="0.5"/>
+            <path d="M15 50 Q25 35, 45 40 Q55 42, 60 35 L55 40 L62 38 L55 43 Q45 50, 30 48 Q20 47, 15 50 Z" fill="#e86a33"/>
+            <circle cx="52" cy="38" r="2" fill="#5c4033"/>
+          </svg>
+        </div>
+        <h3>Dove of Hope</h3>
+        <p class="concept-desc">Bird flying toward sun. Freedom, hope, peace, new life.</p>
+      </div>
+
+      <!-- 12. Cross Heart -->
+      <div class="logo-card dark">
+        <div class="logo-visual">
+          <svg viewBox="0 0 70 80" fill="none">
+            <rect x="27" y="10" width="16" height="60" rx="3" fill="#e86a33"/>
+            <rect x="12" y="25" width="46" height="16" rx="3" fill="#e86a33"/>
+            <path d="M35 45 L28 55 C24 50, 24 44, 30 42 C33 41, 35 43, 35 45 C35 43, 37 41, 40 42 C46 44, 46 50, 42 55 Z" fill="#fdf6e9"/>
+          </svg>
+        </div>
+        <h3>Faith & Love</h3>
+        <p class="concept-desc">Cross with heart. Faith-based mission, love in action.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Wordmark Options -->
+  <div class="section">
+    <h2>Wordmark Options</h2>
+    <p style="margin-bottom: 24px;">Pair any logo mark with these wordmark styles.</p>
+    
+    <div class="wordmark-grid">
+      <div class="wordmark-card">
+        <div class="wordmark" style="color: var(--charcoal);">Mission Village <span style="color: var(--sunset-bright);">Relief</span></div>
+        <div class="wordmark-label">Accent on "Relief"</div>
+      </div>
+      
+      <div class="wordmark-card">
+        <div class="wordmark" style="color: var(--charcoal);"><span style="color: var(--sunset-bright);">Mission</span> Village Relief</div>
+        <div class="wordmark-label">Accent on "Mission"</div>
+      </div>
+      
+      <div class="wordmark-card dark">
+        <div class="wordmark" style="color: white;">Mission Village Relief</div>
+        <div class="wordmark-label">White on dark</div>
+      </div>
+      
+      <div class="wordmark-card dark">
+        <div class="wordmark" style="color: var(--sunset-glow);">MVR</div>
+        <div class="wordmark-label">Abbreviated mark</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-box">
+    <h3>Ready to create your logo?</h3>
+    <p>Use these concepts with Canva, Figma, Adobe Illustrator, or share with a designer to create your final logo.</p>
+  </div>
+
+</div>
+
+</body>
+</html>
